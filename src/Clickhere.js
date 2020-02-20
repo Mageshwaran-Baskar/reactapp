@@ -11,7 +11,7 @@ class  Clickhere extends React.Component {
   return (
     <div >
       
-        <h1 style={{color:"blue"}}>Hey Paul</h1>
+        <h1 style={{color:"blue"}}>Hey Naga</h1>
         <p>
         <span style={{color:"rgb(184, 202, 22)"}}> Great you listened to my words </span> 
         <span style={{color:"red"}}>(But Its not the actual human tendency)</span> </p>
