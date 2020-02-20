@@ -1,7 +1,7 @@
 import React from 'react';
-import Paul from './components/paul';
-import AnotherComponent from './components/AnotherComponent';
-import Clickhere from './components/Clickhere';
+import Paul from './paul';
+import AnotherComponent from './AnotherComponent';
+import Clickhere from './Clickhere';
 
 
 class  App extends React.Component {
