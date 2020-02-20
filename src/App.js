@@ -1,22 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Paul from './paul';
+import AnotherComponent from './AnotherComponent';
+import Clickhere from './Clickhere';
 
-function App() {
+
+class  App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isEmptyState: true , isAddTripState:false , isClick :false }
+  }
+
+  triggerAddTripState = () => {
+    this.setState({
+      ...this.state,
+      isEmptyState: false,
+      isAddTripState: true,
+      isClick : false
+    })}
+
+    triggerClickState = () => {
+      this.setState({
+        ...this.state,
+        isEmptyState: false,
+        isAddTripState: false,
+        isClick : true
+      })}
+
+
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi Phalguna ; How are you ??
-        </p>
-        <button stype="blue">Click Here</button>
-        <button stype="blue">Please don''t click Click Here</button>
-          
-        
-      </header>
+<div>
+  {this.state.isEmptyState && <Paul addTrip={this.triggerAddTripState} click={this.triggerClickState} />}
+
+  {this.state.isAddTripState && <AnotherComponent />}
+
+  {this.state.isClick && <Clickhere />}
+
     </div>
   );
+}
 }
 
 export default App;
