@@ -1,5 +1,5 @@
 import React from 'react';
-import Paul from './paul';
+import Paul from './Paul';
 import AnotherComponent from './AnotherComponent';
 import Clickhere from './Clickhere';
 
