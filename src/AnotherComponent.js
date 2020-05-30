@@ -12,7 +12,7 @@ class  AnotherComponent extends React.Component {
   return (
     <div >
       
-        <h1 style={{color:"blue"}}>Hey Paul</h1>
+        <h1 style={{color:"blue"}}>Hey Naga</h1>
         <p>
         <span style={{color:"rgb(184, 202, 22)"}}> I KNOW YOU WILL CLICK THIS BUTTON </span> 
         <span style={{color:"red"}}>(Its human tendency)</span> </p>

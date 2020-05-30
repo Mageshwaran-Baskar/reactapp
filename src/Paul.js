@@ -14,7 +14,7 @@ const Paul = props => {
           
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi Phalguna ; How are you ??
+          Hi Naga ; How are you ??
         </p>
         <button onClick={props.click}>Click Here</button>
         
